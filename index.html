@@ -1,0 +1,50 @@
+<html>
+
+<head>
+  <title>b-tree</title>
+</head>
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet" />
+
+
+<meta http-equiv="Cache-control" content="NO-CACHE">
+
+
+<body id="main">
+
+  <div id="inputs">
+    <h1>B-Tree <span class="label label-info reset-btree">Order <span id="order-display"></span></span></h1>
+
+    <form action="#" id="create-form" class="form-inline">
+      <p>
+        Create B-tree of order
+        <input type="text" class="form-control" value="3" id="new-order"/><br/>
+        and seed it with
+        <input type="text" class="form-control" value="5" id="new-seed"/>
+        random numbers.
+      </p>
+      <button type="submit" class="btn btn-primary">Continue &rarr;</button>
+    </form>
+
+    <form action="#" id="add-form" class="form-inline">
+      <div class="form-group">
+        <label for="add"></label>
+        <input type="text" class="form-control" placeholder="Enter an integer..." id="input-add"/>
+      </div>
+      <button type="submit" class="btn btn-primary">Add</button>
+      <a href="#" id="clear-button" class="btn btn-default reset-btree">Reset</a>
+    </form>
+
+  </div>
+
+
+<div id="canvas"></div>
+
+</body>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/d3/d3.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="assets/js/btree.js"></script>
+<script type="text/javascript" src="assets/js/btree-node.js"></script>
+<script type="text/javascript" src="assets/js/script.js"></script>
+</html>
